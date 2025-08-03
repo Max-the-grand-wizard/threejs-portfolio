@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta author="Max-the-grand-wizard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfölj för Max – en nyfiken frontendutvecklare med passion för 3D, parallax och moderna webbtjänster. Utforska mina projekt och kunskaper.">
+    <title>Min portfolie</title>
+</head>
+
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <div id="lockScreen" class="lock-screen">
+        <div id="vaktCanvasContainer" class="canvas-container"></div>
+
+        <div class="lock-screen__button-container">
+            <button id="unlockBtn" class="lock-screen__button">
+      Klicka här för att besegra gladiatorn Maximus och stig in
+    </button>
+            <img src="assets/crossed-swords.png" alt="Svärd" class="lock-screen__sword-icon" width="50" height="50" />
+            <div id="clickFeedback" class="lock-screen__click-feedback">Klick: 0 / 10</div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="portfolio__about portfolio__about--grid">
+            <img src="/assets/max-profile-photo.webp" alt="Profilbild" class="portfolio__about-image" />
+            <div class="portfolio__about-text">
+                <p>Jag heter Max och är en kreativ och nyfiken frontendutvecklare med ett starkt driv att hela tiden lära mig mer. Jag har ett stort intresse för att utforska tekniker utanför min formella utbildning, och tycker det är extra spännande när jag får kombinera olika språk, bibliotek och teknologier i samma projekt. På senare tid har jag fördjupat mig i saker som parallax scrolling, Three.js och 3D-rendering i webbläsaren – tekniker som inte bara är tekniskt utmanande utan också väldigt roliga att arbeta med.</p>
+            </div>
+            <div class="portfolio__about-extra">
+                <p> Jag strävar efter att utveckla mina färdigheter inom modern webbutveckling och vill på sikt även dyka djupare in i teknologier som Firebase eller Auth0 för att förstå hur man bygger skalbara applikationer med inloggning, realtidsdata och säkerhet. Att koppla ihop frontenden med kraftfulla tjänster bakom kulisserna känns som nästa naturliga steg i min utveckling. </p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2 class="skills__title">🧠 Kunskaper</h2>
+
+            <div class="skills__group">
+                <h3 class="skills__group-title">🌐 Webbutveckling</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML, CSS, JavaScript</li>
+                    <li class="skills__item">Bootstrap, BEM, Responsiv design</li>
+                    <li class="skills__item">SEO, Bildoptimering, PWA</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-title">🎮 Grafik & 3D</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">Three.js</li>
+                    <li class="skills__item">GSAP, parallax scrolling</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-title">⚛️ Ramverk & Bibliotek</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">React, Vue, Angular</li>
+                    <li class="skills__item">Next.js, React Native</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-title">🛠️ Backend & Databaser</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">Java, PHP, SQL, JSON</li>
+                    <li class="skills__item">API, Postman</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-title">🧰 Verktyg & IDE</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">Visual Studio, VS Code, Eclipse</li>
+                    <li class="skills__item">Figma, WordPress, Excel</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-title">🌍 Språk</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">Svenska, Engelska</li>
+                    <li class="skills__item">Franska, Ryska, Japanska</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-title">🔐 Övrigt</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">Linux, UML, Nätverkssäkerhet</li>
+                    <li class="skills__item">Kanban, Scrum</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--  <div style="height: 500px"></div> -->
+
+        <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
