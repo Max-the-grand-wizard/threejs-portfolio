@@ -30,7 +30,7 @@ scene.add(light);
 // Ladda modellen
 const loader = new GLTFLoader();
 let model;
-loader.load('/models/malegreekwarrior.glb', (gltf) => {
+loader.load('models/malegreekwarrior.glb', (gltf) => {
   model = gltf.scene;
   model.position.set(0, 0, 0);
   scene.add(model);
@@ -47,7 +47,7 @@ for (let i = 0; i < snowCount; i++) {
 }
 snowGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
-const snowflakeTexture = new THREE.TextureLoader().load('/assets/snowflake-icon.png');
+const snowflakeTexture = new THREE.TextureLoader().load('assets/snowflake-icon.png');
 const snowMaterial = new THREE.PointsMaterial({
   size: 0.2,
   map: snowflakeTexture,

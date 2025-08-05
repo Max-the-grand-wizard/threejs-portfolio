@@ -2,5 +2,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/threejs-portfolio/', // Ändra till ditt repo-namn!
+  base: '/threejs-portfolio/', // <-- ditt repo-namn med snedstreck fram!
 })
