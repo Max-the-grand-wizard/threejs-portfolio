@@ -358,7 +358,7 @@ body {
  @media screen and (max-width: 480px) {
      .lock-screen__button {
          font-size: 5px;
-         min-width: 30vw;
+         min-width: 50vw;
     }
      .lock-screen__click-feedback{
          font-size: 12px;
@@ -380,7 +380,7 @@ body {
  @media screen and (max-width: 380px) {
      .lock-screen__button {
          font-size: 4px;
-         min-width: 30vw;
+         min-width: 60vw;
     }
      .lock-screen__click-feedback{
          font-size: 10px;
