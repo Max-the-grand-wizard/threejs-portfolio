@@ -26,10 +26,95 @@
 
     <!-- Projektlänk -->
 <a href="https://max-the-grand-wizard.github.io/Projects/" target="_blank" rel="noopener noreferrer" class="projects-link">
-    <span class="projects-link__icon"></span>
+    <span class="projects-link__icon"> 📁</span>
     <span class="projects-link__text">Mina projekt</span>
     <span class="projects-link__glow"></span>
 </a>
+
+
+<style>
+.projects-link {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: radial-gradient(circle at center, #7f5af0, #3a2476);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    z-index: 10000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(127, 90, 240, 0.6);
+    overflow: hidden;
+}
+
+.projects-link:hover {
+    background: radial-gradient(circle at center, #9e7fff, #6246ea);
+    box-shadow: 0 0 25px rgba(127, 90, 240, 0.9);
+    transform: scale(1.05);
+}
+
+.projects-link:active {
+    transform: scale(0.98);
+}
+
+.projects-link__icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.projects-link:hover .projects-link__icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.projects-link__glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.25), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.projects-link:hover .projects-link__glow {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-link {
+        top: 16px;
+        right: 16px;
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+    .projects-link__icon {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-link {
+        top: 12px;
+        right: 12px;
+        padding: 6px 14px;
+        font-size: 0.75rem;
+    }
+    .projects-link__icon {
+        font-size: 0.9rem;
+    }
+}</style>
+
+
+    
     
    <div class="portfolio">
    <div class="portfolio__about portfolio__about--grid">
@@ -82,6 +167,8 @@
                 <h3 class="skills__group-title">🛠️ Backend & Databaser</h3>
                 <ul class="skills__list">
                     <li class="skills__item">Java, C#, Kotlin, PHP, SQL, JSON</li>
+                    <li class="skills__item">Python, Flask, API-utveckling</li>
+                    <li class="skills__item">Docker, Containerisering</li>
                     <li class="skills__item">API, Postman</li>
                 </ul>
             </div>
