@@ -1,1 +1,1 @@
-This was mostly a project for me to learn both Three.js and github, but i still have lots to learn👌
+This was a project where i could more creativly express myself and use as a more fun introduction to me
